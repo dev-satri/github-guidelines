@@ -32,32 +32,32 @@ Git is a **distributed version control system** that helps track changes in file
 1. Download Git from the [official website](https://git-scm.com/downloads).  
 2. Run the installer and follow the prompts.  
 3. Verify installation:  
-   $$$
+   ```
    git --version
-   $$$
+   ```
 
 ### macOS
 
 - Use Homebrew:  
-  $$$
+  ```
   brew install git
-  $$$
+  ```
 - Verify installation:  
-  $$$
+  ```
   git --version
-  $$$
+  ```
 
 ### Linux
 
 - Use your package manager:  
-  $$$
+  ```
   sudo apt update  
   sudo apt install git
-  $$$
+  ```
 - Verify installation:  
-  $$$
+  ```
   git --version
-  $$$
+  ```
 
 ---
 
@@ -66,62 +66,62 @@ Git is a **distributed version control system** that helps track changes in file
 <details>
 <summary>Setting Up Git</summary>
 
-$$$
+```
 # Configure Git with your name and email
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
-$$$
+```
 
 </details>
 
 <details>
 <summary>Initializing a Repository</summary>
 
-$$$
+```
 # Create a new Git repository
 git init
-$$$
+```
 
 </details>
 
 <details>
 <summary>Adding Files</summary>
 
-$$$
+```
 # Add files to staging area
 git add <file_name>
 git add .
-$$$
+```
 
 </details>
 
 <details>
 <summary>Committing Changes</summary>
 
-$$$
+```
 # Save changes to the repository
 git commit -m "Commit message"
-$$$
+```
 
 </details>
 
 <details>
 <summary>Checking Status</summary>
 
-$$$
+```
 # View the state of your working directory
 git status
-$$$
+```
 
 </details>
 
 <details>
 <summary>Viewing History</summary>
 
-$$$
+```
 # View commit history
 git log
-$$$
+```
 
 </details>
 
@@ -149,33 +149,33 @@ GitHub is a web-based platform for hosting Git repositories. It provides tools f
 
 ### Connecting a Local Repo to GitHub
 
-$$$
+```
 # Add remote URL
 git remote add origin <repo_url>
 
 # Push changes to GitHub
 git push -u origin main
-$$$
+```
 
 ### Cloning a Repository
 
-$$$
+```
 # Clone a repository from GitHub
 git clone <repo_url>
-$$$
+```
 
 ### Branching and Pull Requests
 
 <details>
 <summary>Creating a Branch</summary>
 
-$$$
+```
 # Create a new branch
 git branch <branch_name>
 
 # Switch to the new branch
 git checkout <branch_name>
-$$$
+```
 
 </details>
 
@@ -183,9 +183,9 @@ $$$
 <summary>Creating a Pull Request</summary>
 
 1. Push your branch to GitHub:  
-   $$$
+   ```
    git push origin <branch_name>
-   $$$  
+   ```  
 2. Go to your GitHub repository.  
 3. Click **Pull Requests** > **New Pull Request**.  
 4. Review and submit the pull request.
@@ -199,23 +199,23 @@ $$$
 <details>
 <summary>Stashing Changes</summary>
 
-$$$
+```
 # Save changes without committing
 git stash
 
 # Reapply stashed changes
 git stash apply
-$$$
+```
 
 </details>
 
 <details>
 <summary>Rebasing</summary>
 
-$$$
+```
 # Rebase your branch onto another branch
 git rebase <branch_name>
-$$$
+```
 
 </details>
 
@@ -226,10 +226,10 @@ $$$
 - Edit the file to resolve conflicts.  
 - Add and commit the resolved file.  
 
-$$$
+```
 git add <file_name>
 git commit
-$$$
+```
 
 </details>
 
@@ -237,14 +237,14 @@ $$$
 <summary>Using SSH for GitHub</summary>
 
 1. Generate an SSH key:  
-   $$$
+   ```
    ssh-keygen -t ed25519 -C "you@example.com"
-   $$$  
+   ```  
 2. Add the key to your GitHub account.  
 3. Clone or push using SSH:  
-   $$$
+   ```
    git clone git@github.com:username/repository.git
-   $$$
+   ```
 
 </details>
 
